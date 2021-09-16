@@ -22507,7 +22507,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 					prevRowHeight = prevRow ? prevRow.getHeight() / 2 : 0;
 				}
 			}
-		});
+		}, { passive: true });
 
 		element.addEventListener("touchend", function (e) {
 			if (self.checkTimeout) {
